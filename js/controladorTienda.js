@@ -4,7 +4,7 @@ Comentario de bloque
 */
 //ENTRADAS==VARIAVLES==CONSTANTES
 
-let nombreProducto="batimovil" 
+/*let nombreProducto="batimovil" 
 let precioProducto=400000
 let pesoProducto=18.5
 let tieneDescuento=true
@@ -24,7 +24,28 @@ let productos2=Array("batimovil","camiseta","gorra","bati morral")
 console.log("buenas")
 console.log(nombreProducto)
 console.log("Su nombre es: "+NOMBRE_CLIENTE+" y su producto es: "+nombreProducto)
-console.log('Su nombre es: ${NOMBRE_CLIENTE} y su producto es ${nombreProducto}')
+console.log(`Su nombre es: ${NOMBRE_CLIENTE} y su producto es ${nombreProducto}`)
 console.log("*********")
 console.log(producto)
-console.log(productos2)
+console.log(productos2)*/
+
+//Controlando etiquetas
+//Para javaScripts una etiqueta es una referenncia de memoria
+//1. Crear una variable para guardar una etiqueta
+let etiquetaTitulo = document.getElementById("titulo")
+console.log(etiquetaTitulo)
+
+//2. Como modificar el texto de una etiqueta
+etiquetaTitulo.textContent="rojo vos no existis"
+
+//Controlar el menu
+let etiquetaMenu = document.getElementById("menu")
+etiquetaMenu.textContent="Uefa Champions League"
+
+//Controlando foto
+let etiquetaFoto=document.getElementById("champions")
+etiquetaFoto.textContent.src="img/champions2.jpg"
+
+//cambiar el estilo de la etiqueta
+etiquetaTitulo.classList.add("text-center")
+etiquetaTitulo.classList.add("text-danger")
